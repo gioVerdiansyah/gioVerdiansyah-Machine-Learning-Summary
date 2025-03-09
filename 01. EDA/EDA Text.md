@@ -4,7 +4,7 @@ atau bisa di visualisasikan dengan [[Numerical Visualization#Pieplot|pieplot.]]
 
 ## Mengecek karakter non-alfabetik / simbol
 Kita bisa menemukannya dengan menggunakan regex(regular expression) untuk melihat karakter non-alfabetik / simbol yang ada dalam datasets teks. Contoh kode
-`df['nama_col'].apply(lambda x: re.findall(r'[^a-zA-Z0-9 ]', str(x)))`
+`df['<nama_col>'].apply(lambda x: re.findall(r'[^a-zA-Z0-9 ]', str(x)))`
 
 ## Menampilkan kata yang sering muncul
 
