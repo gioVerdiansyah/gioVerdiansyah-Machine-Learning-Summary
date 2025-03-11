@@ -17,6 +17,11 @@ Atau bisa di artikan:
 $$
 y = \beta_0 + \sum_{i=1}^{n} \beta_i x_i + \epsilon
 $$
+Atau simpelnya
+###### __persamaan dasar Simple Linear Regression__
+setelah mendapatkan best param adalah seperti ini:
+$$y = \beta_0 + \beta_1x$$
+
 $y$ : dependen variabel, hasil dari prediksi
 $\beta_i$ : koefesiensi dari model kita, ini adalah dasar dari model kita, apa yang model kita pelajari sebelum nantinya di optimasi.
 $x_i$ : independent variabel, fitur-fitur yang digunakan untuk menghasilkan variabel dependen
@@ -56,44 +61,8 @@ $house\_price = 0 \cdot sqft + 242000$
 Tentu model kita sangat buruk dan tidak cocok dengan data sama sekali.
 Untuk mengukur seberapa kesalahan secara kuantitatif. Ukur jarak antara setiap hasil prediksi dengan nilai test.
 
-Tujuan linear regresi adalah mengurangi kesalahan di atas hingga menemukan garis yang sesuai dengan data tes. Untuk masalah regresi sederhana hal ini melibatkan intersep $y$ dan kemiringan model kita $\hat\beta_0$ dan $\hat\beta_1$
-$$
-\hat\beta_1 = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}
-$$
-$$
-\hat\beta_0 = \bar{y} - \hat\beta_1 \bar{x}
-$$
-$\bar{x}$ adalah rata-rata nilai fitur.
-$\bar{y}$ adalah rata-rata nilai target.
-
-__Contoh perhitungan:__
-$\bar{x} = 300$
-$\bar{y} = 242000$
-
-Hitung pembilang $\hat\beta_1$
-$$
-(100 - 300)(100000 - 242000) + (200 - 300)(180000 - 242000) + (300 - 300)(250000 - 242000) + (400 - 300)(31000 - 242000) + (500 - 300)(370000)
-$$
-$$(−200)(−142000)+(−100)(−62000)+(0)(8000)+(100)(68000)+(200)(128000)$$
-$$28400000+6200000+0+6800000+25600000=67000000$$
-Hitung penyebut $\hat\beta_1$
-$$(100−300)^2+(200−300)^2+(300−300)^2+(400−300)^2+(500−300)^2$$
-$$(−200)^2+(−100)^2+(0)^2+(100)^2+(200)^2$$
-$$40000+10000+0+10000+40000=100000$$
-$$\hat\beta_1 = \frac{67000000}{100000} = 670$$
-Hitung $\hat\beta_0$
-$$\hat\beta_0 = 242000 - (670 \times 300)$$
-$$\hat\beta_0 = 242000 - 201000 = 41000$$
-
-Setelah kita mendapatkan **$\hat{\beta_0}$ dan $\hat{\beta_1}$**, kita bisa menghitung **residual ($\hat{\epsilon}$)** untuk setiap titik data:
-$$\hat\epsilon_i = y_i - \hat{y_i}$$
-Diamana $\hat{y_i}$ adalah:
-$$\hat{y_i} = \hat{\beta}_0 + \hat{\beta}_1x_i$$
-Nilai $\hat\epsilon_i$ dapat di gunakan untuk evaluasi error model seperti:
-+ __[[Mean Square Error (MSE)]]__
-+ [[Mean Absolute Error (MAE)]]
-+ [[R2 Squared]]
-Note: nilai $y - \hat{y}$ sudah di hitung menjadi $\hat\epsilon$
+Tujuan linear regresi adalah mengurangi kesalahan di atas hingga menemukan garis yang sesuai dengan data tes. Untuk masalah regresi sederhana hal ini melibatkan intersep $y$ dan kemiringan model kita $\hat\beta_0$ dan $\hat\beta_1$ dapat di cari nilai koefisien nya menggunakan salah satu rumus __[[Ordinary Least Squares (OLS)]]__.
+OLS akan menghasilkan nilai error residual($\hat\epsilon$) yang dapat berguna untuk menghitung jarak error dengan nilai aslinya.
 
 ![[Pasted image 20250309010014.png|500]]
 Pada pelatihan di atas model kita sudah bisa menangkap garis yang di maksud meski masih ada sedikit error (ini normal).
@@ -102,7 +71,13 @@ Setelah kita melatih model kita, untuk melatih model kita sangat mudah, kita han
 Contoh:
 
 $sqft = 250$ 
-$\hat{y} = 756.9 \cdot 350 - 27153.8$
-$\hat{y} = 237761$
+$\hat{y} = 41000 + 670 \times 250$
+$\hat{y} = 208.500$
 
-Model kita memprediksi harga rumah dengan square-footage 350 perkiraan berharga $237.761
+Model kita memprediksi harga rumah dengan square-footage 250 perkiraan berharga $208.500
+
+## Next of Simple Linear Regression 
+Kita sudah bisa memahami basic linar regression dengan cukup baik.
+Untuk catatan tambahan bentuk dari keseluruhan simple linear regression seperti ini
+![[Pasted image 20250309203435.png|500]]
+Note: simbol $\theta_1 = \hat\beta_0$ dan $\theta_2 = \hat\beta_1$

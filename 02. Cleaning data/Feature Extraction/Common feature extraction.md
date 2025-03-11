@@ -24,19 +24,20 @@
 
 + ### Standarisasi
   
-  1. Z-Score normalization
+1. Standard Scaler 
+2.  Z-Score normalization
      Mengubah data sehingga memilki __mean__ = 0 dan __standar deviasi__ = 1.
      Cocok untuk algoritma seperti **Linear Regression, Logistic Regression, PCA**, dan model berbasis gradien.
 
-  2. Mean normalization
+3. . Mean normalization
      Menggeser nilai agar memiliki __mean__ = 0 dan rentan di antara -1 sampai 1.
      Berguna untuk beberapa model linear agar lebih stabil.
      
-  3. Unit Vector Scaling (Normalization to Unit Norm)
+4. . Unit Vector Scaling (Normalization to Unit Norm)
      Memproyeksikan vector data ke dalam panjang 1 dengan membagi nilai dengan __L1 norm__ (panjang vector).
      Cocok untuk **algoritma berbasis jarak**, seperti **KNN dan SVM**.
      
-  4. Whitening (Sphering Transformation)
+5. . Whitening (Sphering Transformation)
      Mengubah data agar memiliki __mean__ = 0 dan __covariance matrix__ = __identity matrix__
      Digunakan di **PCA dan Deep Learning** untuk **dekorrelasi fitur**.
 

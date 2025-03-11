@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04. Modeling/Supervised Learning/Regression/Linear Regression.md",
+                "file": "04. Modeling/Optimization Algorithm/Gradient Descent/Batch Gradient Descent (BGD).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linear Regression"
+              "title": "Batch Gradient Descent (BGD)"
             }
           },
           {
@@ -73,7 +73,8 @@
               "title": "Common feature extraction"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -220,15 +221,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48ea13d1255e08ce",
+  "active": "1048e933587ca105",
   "lastOpenFiles": [
-    "04. Modeling/Supervised Learning/Regression/Linear Regression.md",
+    "02. Cleaning data/Feature Extraction/Common feature extraction.md",
+    "04. Modeling/Optimization Algorithm/Gradient Descent/Batch Gradient Descent (BGD).md",
+    "04. Modeling/Optimization Algorithm/Ordinary Least Squares (OLS).md",
     "05. Evaluation Model/Regression/R2 Squared.md",
+    "04. Modeling/Supervised Learning/Regression/Linear Regression.md",
+    "04. Modeling/Optimization Algorithm/Gradient Descent",
+    "04. Modeling/images/Pasted image 20250309203435.png",
+    "04. Modeling/Types of Machine Learning.webp",
+    "01. EDA/EDA Text.md",
+    "04. Modeling/Optimization Algorithm",
+    "02. Cleaning data/Basic Cleaning data.md",
     "05. Evaluation Model/Regression/Mean Square Error (MSE).md",
     "05. Evaluation Model/Regression/Mean Absolute Error (MAE).md",
-    "02. Cleaning data/Feature Extraction/Common feature extraction.md",
-    "01. EDA/EDA Text.md",
-    "04. Modeling/Types of Machine Learning.webp",
     "05. Evaluation Model/Regression",
     "05. Evaluation Model",
     "Modeling/Untitled",
@@ -246,22 +253,18 @@
     "Modeling/Untitled.md",
     "01. EDA/Visualization/Categorical Visualization.md",
     "LICENSE.txt",
-    "LICENSE",
-    "gioVerdiansyah-Machine-Learning-Summary/LICENSE",
     "01. EDA/Visualization/Visualization tips.md",
     "01. EDA/images/Pasted image 20250308212913.png",
     "01. EDA/Visualization/Numerical Visualization.md",
     "01. EDA/images/Pasted image 20250308210646.png",
     "03. Feature Selection/Dimensionality Reduction.md",
     "03. Feature Selection/Feature Selection.md",
-    "02. Cleaning data/Basic Cleaning data.md",
     "01. EDA/images/Pasted image 20250308132255.png",
     "01. EDA/Visualization/Both Visualization.md",
     "01. EDA/images/Pasted image 20250308121221.png",
     "01. EDA/images/Pasted image 20250308120805.png",
     "Numerical.md",
     "01. EDA/Visualization.md",
-    "01. EDA/images/Pasted image 20250308114108.png",
     "Welcome.md"
   ]
 }
